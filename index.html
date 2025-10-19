@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>S-Music | Inicio</title>
+  <link rel="shortcut icon" href="imagenes/bolita.ico" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="inicio">
+  <header class="navbar">
+    <a href="index.html" class="logo"><img src="imagenes/logo-smusic.png" alt="S-Music"></a>
+    
+    <nav>
+      <a href="index.html" class="active">Inicio</a>
+      <a href="evolucion.html">Evolución</a>
+      <a href="epoca.html">Mejor Época</a>
+      <a href="actual.html">Música Actual</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <div class="hero">
+      <div class="hero-text">
+        <h1 class="titulo-principal">S-Music</h1>
+        <p class="lead">Explora cómo la música ha cambiado con el tiempo, influenciando generaciones, estilos y emociones.</p>
+        <a class="btn" href="home.html">Explorar</a>
+      </div>
+      <div class="card-img"><img src="imagenes/notas1.png" alt="Concierto" /></div>
+    </div>
+
+    <section class="contenido">
+      <h2>Bienvenido a S-Music</h2>   
+      <p>Los géneros musicales han cambiado drásticamente: lo que antes era popular, como los boleros o el jazz clásico, 
+        dio paso a nuevas corrientes como el rock, el pop, el reguetón o la música electrónica. Aquí encontraras algo de esta historia, 
+        su evolución, sus mejores épocas  y como la música actual ha sido influenciada por todos estos ritmos que desde la antiguedad han marcado pautas que nunca pasaran de moda</p>
+     
+    </section>
+
+    <div class="carrusel" aria-label="Carrusel de inicio">        
+
+      <img src="imagenes/portada.jpg" class="active" alt="Instrumentos musicales" />
+      <img src="imagenes/home1.jpg" alt="Concierto en vivo" />          
+      <img src="imagenes/home2.jpg" alt="Portada música" />
+      <video id="videoMusica" loop playsinline>
+        <source src="imagenes/video_Historia_Home.mp4" type="video/mp4">
+        Tu navegador no soporta el video HTML5.
+      </video>
+              
+      <!-- Botones -->
+      <button class="prev" aria-label="Anterior">◀</button>
+      <button class="next" aria-label="Siguiente">▶</button>
+    </div>
+  </main>
+ 
+  <footer>
+    <p>2025 S-MUSIC — Todos los derechos reservados</p>
+    <p>&copy; reconicimiento al video a Astraway  <a href="https://www.youtube.com/watch?v=pHaR2lDLKb0"> ver </a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

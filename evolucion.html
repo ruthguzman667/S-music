@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>S-Music | Evolución</title>
+  <link rel="shortcut icon" href="imagenes/bolita.ico" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="evolucion">
+  <header class="navbar">
+    <a href="index.html" class="logo"><img src="imagenes/logo-smusic.png" alt="S-Music"></a>
+  
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="evolucion.html" class="active">Evolución</a>
+      <a href="epoca.html">Mejor Época</a>
+      <a href="actual.html">Música Actual</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1 class="titulo-principal">Evolución de la Música</h1>
+    <section class="contenido">
+      <h2>La música a través del tiempo</h2>
+      <p>Desde los tambores tribales hasta los sintetizadores digitales, la música ha acompañado a la humanidad como una forma de expresión y unión social.</p>
+      <h3>Evolución de los géneros</h3>
+      <p>Lo que antes era popular dio paso a nuevas corrientes como el rock, el pop, el reguetón o la música electrónica.</p>
+      <h3>La tecnología en la música</h3>
+      <p>Con la llegada de Internet y las plataformas digitales, la música se globalizó. Hoy cualquier artista puede llegar al mundo entero desde su habitación.</p>
+      <h3>Acceso y Mercado</h3>
+      <p>La industria musical está enfocada en lanzar novedades constantemente. Eso hace que los medios promocionen 
+        más lo actual que lo clásico.</p>
+    
+    </section>
+
+    <div class="carrusel" aria-label="Carrusel evolución">
+      <img src="imagenes/evolution1.jpg" class="active" alt="Instrumentos musicales" />      
+      <img src="imagenes/evolution2.jpg" alt="Portada música" />
+      <img src="imagenes/evolution3.jpg" alt="Portada música" />
+      <img src="imagenes/evolution4.jpg" alt="Portada música" />
+      <video id="videoMusica" loop playsinline>
+        <source src="imagenes/Historia_Musica.mp4" type="video/mp4">
+        Tu navegador no soporta el video HTML5.
+      </video>
+      <button class="prev" aria-label="Anterior">◀</button>
+      <button class="next" aria-label="Siguiente">▶</button>
+    </div>
+  </main>
+  
+
+  <footer>
+    <p>2025 S-MUSIC — Todos los derechos reservados</p>
+    <p>&copy;reconocimiento al video de Alberto Musitaro <a href="https://www.youtube.com/watch?v=jwGFjT3NGdI"> ver </a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
