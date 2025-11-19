@@ -171,7 +171,7 @@ section {
   cursor: pointer;
   z-index: 5; /* 👈 se asegura que las flechas estén por encima de TODO */
   font-size: 24px;
-  transition: background 0.3s ease, transform 0.3s ease;
+  transition: transform 0.3s ease, transform 0.3s ease;
 }
 
 .carrusel button:hover {
@@ -250,4 +250,75 @@ ul li {
   background-position: 0 0;
   background-size: 1.4rem 1.4rem;
   background-repeat: no-repeat;
+}
+
+/* --- Widget flotante (más pequeño) --- */
+.survey-widget {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 230px;
+    padding: 15px;
+    background: #ffffff;
+    border-radius: 14px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+    z-index: 9999;
+    font-family: 'Poppins', sans-serif;
+    animation: fadeIn 0.35s ease;
+    display: none; /* Oculto por defecto */
+}
+
+/* Título */
+.survey-widget h2 {
+    font-size: 13px;
+    color: #4c1d95;
+    margin-bottom: 12px;
+    line-height: 1.35;
+}
+
+/* Botón del enlace */
+.survey-link {
+    display: block;
+    text-align: center;
+    background: #a78bfa;
+    color: white;
+    padding: 8px 10px;
+    border-radius: 8px;
+    font-size: 13px;
+    text-decoration: none;
+    margin-bottom: 8px;
+    transition: background 0.3s ease;
+}
+
+.survey-link:hover {
+    background: #8b5cf6;
+}
+
+/* Botón de cerrar */
+.close-btn {
+    display: block;
+    width: 100%;
+    background: transparent;
+    border: none;
+    color: #777;
+    font-size: 12px;
+    cursor: pointer;
+    margin-top: 2px;
+    transition: opacity 0.2s ease;
+}
+
+.close-btn:hover {
+    opacity: 0.7;
+}
+
+/* Animación */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

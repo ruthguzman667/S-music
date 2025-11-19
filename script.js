@@ -65,6 +65,19 @@ function initCarousel(el) {
   });
 }
 
+
+// Mostrar después de 2 segundos
+  window.onload = function () {
+      setTimeout(() => {
+          document.getElementById("surveyWidget").style.display = "block";
+      }, 2000); // 2000 ms = 2 segundos
+  };
+
+  // Cerrar widget
+  function closeSurvey() {
+      document.getElementById("surveyWidget").style.display = "none";
+  }
+
 // ==============================
 // Activar sonido manual al cargar
 // ==============================
@@ -82,3 +95,4 @@ document.addEventListener('DOMContentLoaded', () => {
     video.play();
   });
 });
+
